@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Jogo da Memória</h1>
+    <div id="info">
+        <button id="reiniciar-jogo">Reiniciar Jogo</button>
+
+        <span>
+            Tempo:
+            <span id="timer">60</span> segundos
+            <span>  
+                Acertos: 
+                <span id="score">0</span>
+            </span>
+        </span>
+    </div>
+    <div class="game-board" id="game-board">
+
+    </div>
+    <div id="mensagem-final" style="display: none; font-size: 24px; color: white; margin-top: 20px;"></div>
+    <audio id="som-acerto" src="sonido-correcto-331225.mp3" preload="auto"></audio>
+</body>
+<script src="index.js"></script>
+</html>

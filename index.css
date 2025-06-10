@@ -1,0 +1,64 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(122, 6, 157);
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+#info {
+    margin: 10px auto;
+    font-size: 18px;
+}
+
+.game-board {
+    width: 320px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    gap: 10px;
+}
+
+.card {
+    width: 70px;
+    height: 70px;
+    background-color: #2402ab;
+    border-radius: 8px;
+    display: flex;
+    color: white;
+    font-size: 32px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-revealed {
+    background-color: rgb(245, 225, 2);
+}
+
+#reiniciar-jogo {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #2a05d2;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#reiniciar-jogo:hover {
+    background-color: #09a5e8;
+    transform: scale(1.05);
+}
+
+#reiniciar-jogo:active {
+    transform: scale(0.95);
+}
